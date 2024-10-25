@@ -7,7 +7,6 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws TelegramApiException, IOException {
-        System.out.println("Starting telegram bot");
         DummyServer.startServer();
         TelegramBot telegramBot = new TelegramBot();
         TelegramBotsApi telegramBotsApi = new TelegramBotsApi(DefaultBotSession.class);
